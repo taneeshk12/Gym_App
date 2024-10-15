@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#FEC700"
+    android:backgroundTint="#FEC700">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <!-- Logo Section (positioned at the top) -->
+
+
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="match_parent"
+            android:layout_height="194dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/gym"
+            tools:ignore="RtlSymmetry" />
+
+        <!-- Profile Button (positioned below the logo) -->
+
+        <!-- Book a Slot Button (positioned below the Profile Button) -->
+        <Button
+            android:id="@+id/buttonProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewLogo"
+            android:layout_marginTop="26dp"
+            android:backgroundTint="#000000"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewLogo"
+            android:layout_marginTop="90dp"
+            android:backgroundTint="#000000"
+            android:text="View Details"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <!-- View Attendance Button (positioned below the Book a Slot Button) -->
+
+        <!-- WebView (positioned below the Attendance Button) -->
+
+        <Button
+            android:id="@+id/buttonBookSlot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonProfile"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="#000000"
+            android:text="Book a Slot"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonAttendance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonBookSlot"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#000000"
+            android:text="Mark Attendance"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="171dp"
+            android:layout_below="@id/buttonAttendance"
+            android:layout_marginTop="4dp" />
+    </RelativeLayout>
+</ScrollView>
